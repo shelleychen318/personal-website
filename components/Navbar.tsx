@@ -22,11 +22,14 @@ export default function Navbar() {
 
   return (
     <header className={styles.navbar}>
-      <Link href="/" className={styles.logo}>SC</Link>
-
+      <Link href="/" className={styles.logo}>
+        SC
+      </Link>
       <nav className={styles.links}>
         {links.map(({ id, link, href }) => (
-          <Link key={id} href={href}>{link}</Link>
+          <Link key={id} href={href}>
+            {link}
+          </Link>
         ))}
       </nav>
     </header>

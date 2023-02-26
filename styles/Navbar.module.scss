@@ -1,21 +1,18 @@
 .navbar {
   display: flex;
-  flex-direction: row;
+  position: fixed;
   justify-content: space-between;
   width: 100%;
   z-index: 10;
-
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  //   background-color: black;
+  // align-items: center;
   padding: 1rem 3rem;
-  margin-left: auto;
-  margin-right: auto;
+  //   margin-left: auto;
+  //   margin-right: auto;
 
   .logo {
     text-decoration: none;
-      color: var(--text);
+    color: var(--text);
   }
 
   .links {
@@ -24,7 +21,19 @@
     a {
       text-decoration: none;
       color: var(--text);
-    }
+      margin-left: 3rem;
 
+      &:hover {
+        color: var(--accent);
+        transition-duration: 0.3s;
+        transform: scale(1.1);
+        font-weight: 500;
+      }
+
+      &:focus {
+        color: var(--accent);
+        font-weight: 500;
+      }
+    }
   }
 }
