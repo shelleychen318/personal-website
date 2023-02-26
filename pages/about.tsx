@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import styles from "../styles/About.module.scss"
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
 
       <Navbar />
 
-      <div>about page</div>
+      <div className={styles.title}>about page</div>
     </>
   );
 }
