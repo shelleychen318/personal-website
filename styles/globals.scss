@@ -1,17 +1,44 @@
 html {
-  --bg: #eae7dc;
-  --text: 	#0e1111;
-  --accent: #744C84;
+  --bg: #fff8e7;
+  --text: #343231;
+  --accent: #744c84;
 
   body {
     padding: 0;
     margin: 0;
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.75;
   }
 }
 
 * {
   box-sizing: border-box;
+  // overflow:hidden
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
 }

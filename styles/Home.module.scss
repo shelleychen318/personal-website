@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  // margin: 2rem;
+  padding: 10rem 2rem;
+  min-height: 70vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 350px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .image {
+    width: 270px;
+  }
+}
