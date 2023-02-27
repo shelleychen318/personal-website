@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  position: fixed;
+  position: sticky;
   justify-content: space-between;
   width: 100%;
   z-index: 10;
@@ -15,15 +15,13 @@
 
   .logo {
     text-decoration: none;
-    color: var(--text);
+    // color: var(--text);
   }
 
   .links {
     display: flex;
 
     a {
-      text-decoration: none;
-      color: var(--text);
       margin-left: 3rem;
 
       &:hover {

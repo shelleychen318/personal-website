@@ -16,10 +16,10 @@ export default function Home() {
 
       <div className={styles.container}>
         <h1 className={styles.title}>Hi there! I'm Shelley.</h1>
-        <h3>
+        <h4>
           A developer who thrives in collaborative and creative spaces.
           Constantly growing.
-        </h3>
+        </h4>
         <Image src={homeImg} alt="me" className={styles.image} />
       </div>
     </>
