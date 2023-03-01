@@ -49,30 +49,23 @@
 
 // alternate image and info positions each row
 @media (min-width: 640px) {
-  .projects > a:nth-child(2n + 1) > .projectCard {
+  .container > a:nth-child(2n + 1) > .projectCard {
     flex-direction: row-reverse;
   }
 }
 
 // decrease padding for smaller screens
 @media (max-width: 900px) {
-  .projects > a > .projectCard > .info {
+  .container > a > .projectCard > .info {
     padding: 0 1rem;
   }
 }
 
 // change to column view for small screens
 @media (max-width: 640px) {
-  .projects > a > .projectCard {
+  .container > a > .projectCard {
     flex-direction: column;
     padding: 1rem;
-
-    // .imageContainer {
-    //   max-width: 100%;
-    //   width: 100%;
-    //   height: auto;
-    //   aspect-ratio: 4 / 3;
-    // }
 
     .info {
       width: 100%;
