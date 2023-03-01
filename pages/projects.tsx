@@ -2,33 +2,40 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import aritzia from "../public/assets/aritziaApp.png";
+import movie from "../public/assets/movieDetailsApp.png";
 import blog from "../public/assets/blog.jpg";
-import aritzia from "../public/assets/aritziaAppImg.png"
-import expense from "../public/assets/expenseTrackerImg.png"
+import expense from "../public/assets/expenseTrackerApp.png"
 import styles from "../styles/Projects.module.scss";
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
+      image: aritzia,
+      title: "Aritzia App",
+      description:
+        "Mobile shopping app prototype for Aritzia. Built using SwiftUI for iOS.",
+      link: "https://github.com/shelleychen318/aritzia-app",
+    },
+    {
+      id: 2,
+      image: movie,
+      title: "Movie Details App",
+      description:
+        "Web application that displays details of any movie. Built using Next.js and IMDb API and styled using Tailwind CSS.",
+      link: "https://github.com/shelleychen318/aritzia-app",
+    },
+    {
+      id: 3,
       image: blog,
       title: "Blog Website",
       description:
         "A personal blog website where I share my thoughts on various topics. Built using React, Next.js, and GraphQL.",
       link: "https://github.com/shelleychen318/javascript-blog",
-      demo: "https://javascript-blog.vercel.app/",
     },
     {
-      id: 2,
-      image: aritzia,
-      title: "Movie Details Website",
-      description:
-        "Web app that displays details of any movie. Built using Next.js and IMDb API.",
-      link: "https://github.com/shelleychen318/movie-details-app",
-      demo: "https://movie-details-app.vercel.app",
-    },
-    {
-      id: 3,
+      id: 4,
       image: expense,
       title: "Expense Tracker App",
       description:

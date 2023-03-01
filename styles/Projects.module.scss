@@ -19,11 +19,15 @@
 
     &:hover {
       background-color: var(--bg-darker);
+
+      .title {
+        text-decoration: underline;
+      }
     }
 
     .imageContainer {
       max-width: 400px;
-      width:100%;
+      width: 100%;
       position: relative;
       aspect-ratio: 4 / 3;
 
@@ -65,12 +69,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .container > a > .projectCard > .info {
-    padding: 0 1rem;
-  }
-}
-
 // change to column view for small screens
 @media (max-width: 640px) {
   .container {
@@ -80,7 +78,6 @@
     a > .projectCard {
       flex-direction: column;
       padding: 1rem;
-      
 
       .imageContainer {
         max-width: 100%;
