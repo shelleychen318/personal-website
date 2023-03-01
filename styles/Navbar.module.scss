@@ -15,7 +15,6 @@
 
   .logo {
     text-decoration: none;
-    // color: var(--text);
   }
 
   .links {
@@ -45,12 +44,13 @@
 
 @media (max-width: 500px) {
   .navbar {
-    // padding: 1.5rem 0.2rem 0.5rem 1rem;
-    .links > a {
-      .icons {
-        display: block;
-        // size: 40;
-        // text-align: center;
+    .links {
+      a {
+        margin-left: 2.5rem;
+
+        .icons {
+          display: block;
+        }
       }
     }
   }
