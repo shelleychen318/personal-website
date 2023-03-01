@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import me from "../public/assets/aboutMeImg.png";
 import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.scss";
@@ -21,23 +22,35 @@ export default function About() {
         <br />
         <div className={styles.text}>
           <p>
-            My name is Shelley Chen. I am a first year Systems Design
-            Engineering student at the Unviersity of Waterloo. I am passionate
-            about technology, design, and innovation and am looking to gain more
-            experience in full stack development and UI/UX.
+            Hi, I'm Shelley! I am a first year Systems Design Engineering
+            student at the Unviersity of Waterloo. I am passionate about
+            technology and design, and am looking to gain more experience in
+            full stack development.
           </p>
           <br />
           <p>
-            Currently, I am working at Health and Rehab Research Inc. as a
-            Software Engineering Research Assistant where I work with machine
-            learning algorithms to develop products that contribute to the
-            health care of patients.
+            What excites me about development is getting to turn my wildest
+            ideas into reality through the power of writing code. I enjoy
+            learning new technologies and applying them to solve problems that
+            I'm passionate about. You can check out some of my work on{" "}
+            <Link href="https://github.com/shelleychen318" target={"_blank"}>
+              Github
+            </Link>
+            .
           </p>
           <br />
           <p>
             In my free time, I enjoy travelling, playing badminton, and trying
             out new restaurants. I am also an avid Netflix watcher when I have
             enough time to do that!
+          </p>
+          <br />
+          <p>
+            Looking to get to know me better? Here's my{" "}
+            <Link href="https://github.com/shelleychen318" target={"_blank"}>
+              resume
+            </Link>
+            .
           </p>
         </div>
       </div>

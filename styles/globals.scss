@@ -1,6 +1,6 @@
 :root {
-  --bg: #E3ECDD;
-  --bg-darker: #D2DBCC;
+  --bg: #e3ecdd;
+  --bg-darker: #d2dbcc;
   --text: #343231;
   --accent: #83677b;
 
@@ -46,12 +46,13 @@ h4 {
 }
 
 p {
+  font-size: 17px;
   margin: 0;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 @media (max-width: 768px) {

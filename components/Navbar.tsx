@@ -9,19 +9,19 @@ export default function Navbar() {
   const links = [
     {
       id: 1,
-      link: "Home",
+      link: "home",
       icon: <BiHome size={25} />,
       href: "/",
     },
     {
       id: 2,
-      link: "Projects",
+      link: "projects",
       icon: <BiGridAlt size={25} />,
       href: "/projects",
     },
     {
       id: 3,
-      link: "About",
+      link: "about",
       icon: <BiPaperPlane size={25} />,
       href: "/about",
     },
