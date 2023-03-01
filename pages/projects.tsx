@@ -53,14 +53,13 @@ export default function Projects() {
           <Link key={id} href={link}>
             <div className={styles.projectCard}>
               <div className={styles.imageContainer}>
-                <Image src={image} alt={title} fill className={styles.image} />
+                <Image src={image} alt={title} className={styles.image} />
               </div>
               <div className={styles.info}>
                 <div className={styles.title}>
                   <h3>{title}</h3>
                 </div>
                 <p>{description}</p>
-                {/* <Link href={github} /> */}
               </div>
             </div>
           </Link>
