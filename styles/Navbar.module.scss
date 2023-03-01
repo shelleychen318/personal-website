@@ -35,11 +35,10 @@
       .icons {
         display: none;
       }
-
-      //   &:focus {
-      //     color: var(--accent);
-      //     font-weight: 500;
-      //   }
+    }
+    .activeLink {
+      color: var(--accent);
+      scale: 1.1;
     }
   }
 }
