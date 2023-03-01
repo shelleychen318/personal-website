@@ -22,12 +22,13 @@
 
     a {
       margin-left: 3rem;
+      font-weight: 500;
+      font-size: large;
 
       &:hover {
         color: var(--accent);
         transition-duration: 0.3s;
         transform: scale(1.1);
-        font-weight: 500;
       }
 
       .icons {
