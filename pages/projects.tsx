@@ -24,7 +24,7 @@ export default function Projects() {
       title: "Movie Details App",
       description:
         "Web application that displays details of any movie. Built using Next.js and IMDb API and styled using Tailwind CSS.",
-      link: "https://github.com/shelleychen318/aritzia-app",
+      link: "https://movie-details-app.vercel.app/",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export default function Projects() {
       title: "Blog Website",
       description:
         "A personal blog website where I share my thoughts on various topics. Built using React, Next.js, and GraphQL.",
-      link: "https://github.com/shelleychen318/javascript-blog",
+      link: "https://javascript-blog.vercel.app/",
     },
     {
       id: 4,
@@ -41,7 +41,6 @@ export default function Projects() {
       description:
         "Mobile app that displays your history of expenses as well as a chart that tracks the current month's spending. Built using SwiftUI for iOS.",
       link: "https://github.com/shelleychen318/expense-tracker",
-      demo: "https://github.com/shelleychen318/expense-tracker#demo",
     },
   ];
 
@@ -57,7 +56,7 @@ export default function Projects() {
       <div className={styles.container}>
         <h2>Projects</h2>
         {projects.map(({ id, image, title, description, link }) => (
-          <Link key={id} href={link}>
+          <Link key={id} href={link} target="_blank">
             <div className={styles.projectCard}>
               <div className={styles.imageContainer}>
                 <Image src={image} alt={title} className={styles.image} />

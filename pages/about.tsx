@@ -33,7 +33,7 @@ export default function About() {
             ideas into reality through the power of writing code. I enjoy
             learning new technologies and applying them to solve problems that
             I'm passionate about. You can check out some of my work on{" "}
-            <Link href="https://github.com/shelleychen318" target={"_blank"}>
+            <Link href="https://github.com/shelleychen318" target="_blank">
               Github
             </Link>
             .
@@ -47,7 +47,7 @@ export default function About() {
           <br />
           <p>
             Looking to get to know me better? Here's my{" "}
-            <Link href="https://github.com/shelleychen318" target={"_blank"}>
+            <Link href="https://github.com/shelleychen318" target="_blank">
               resume
             </Link>
             .
