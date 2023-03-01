@@ -45,7 +45,7 @@ export default function Projects() {
 
       <Navbar />
 
-      <div className={styles.projects}>
+      <div className={styles.container}>
         <h2>Projects</h2>
         {projects.map(({ id, image, title, description, link }) => (
           <Link key={id} href={link}>
