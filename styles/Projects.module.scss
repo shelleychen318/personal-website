@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: flex-start;
   gap: 1rem;
   padding: 0 3rem 6rem 3rem;
+  // width: 100%;
+
+  * {
+    width: min(100%, calc(900px));
+    // margin:auto;
+  }
 
   .projectCard {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 900px;
-    max-width: 100%;
     border-radius: 1rem;
     gap: 1.5rem;
     padding: 1.5rem 2rem;
@@ -26,7 +29,7 @@
       max-width: 400px;
       width: 100%;
       height: auto;
-      // position: relative;
+      position: relative;
       aspect-ratio: 4 / 3;
 
       img {
@@ -44,9 +47,13 @@
       padding: 0 2rem;
       width: 400px;
       max-width: 90%;
-      // text-align: justify;
+      // text-align: center;
     }
   }
+}
+
+.title {
+  text-align: center;
 }
 
 // alternate image and info positions each row
@@ -58,34 +65,40 @@
 
 // decrease padding for smaller screens
 @media (max-width: 900px) {
-  .container > a > .projectCard {
-    width: 700px;
-  } .info {
+  .container > a > .projectCard > .info {
     padding: 0 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .container > a > .projectCard {
-    width: 600px;
-  } .info {
+  .container > a > .projectCard > .info {
     padding: 0 1rem;
   }
 }
 
 // change to column view for small screens
 @media (max-width: 640px) {
-  .container > a > .projectCard {
-    flex-direction: column;
-    padding: 1rem;
-    width: 500px;
+  .container {
+    padding: 1rem 1rem 3rem 0.5rem;
+    a > .projectCard {
+      flex-direction: column;
+      padding: 1rem;
+      // width: 500px;
 
-    .info {
-      width: 100%;
-      max-width: 100%;
-
-      .text {
+      .imageContainer {
         max-width: 100%;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+      }
+
+      .info {
+        width: 100%;
+        max-width: 100%;
+
+        .text {
+          max-width: 100%;
+        }
       }
     }
   }

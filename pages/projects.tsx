@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import blog from "../public/assets/blog.jpg";
 import aritzia from "../public/assets/aritziaAppImg.png"
+import expense from "../public/assets/expenseTrackerImg.png"
 import styles from "../styles/Projects.module.scss";
 
 export default function Projects() {
@@ -28,7 +29,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      image: blog,
+      image: expense,
       title: "Expense Tracker App",
       description:
         "Mobile app that displays your history of expenses as well as a chart that tracks the current month's spending. Built using SwiftUI for iOS.",
@@ -55,7 +56,9 @@ export default function Projects() {
                 <Image src={image} alt={title} fill className={styles.image} />
               </div>
               <div className={styles.info}>
-                <h3>{title}</h3>
+                <div className={styles.title}>
+                  <h3>{title}</h3>
+                </div>
                 <p>{description}</p>
                 {/* <Link href={github} /> */}
               </div>
