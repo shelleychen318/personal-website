@@ -11,8 +11,14 @@
     flex-direction: row;
     align-items: center;
     border-radius: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1.5rem 2rem;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+
+    &:hover {
+      background-color: var(--bg-darker);
+    }
 
     .imageContainer {
       max-width: 400px;
@@ -33,7 +39,7 @@
       flex-direction: column;
       // align-items: center;
       // justify-content: center;
-      padding: 0 3rem;
+      padding: 0 2rem;
       width: 400px;
       max-width: 90%;
       // text-align: justify;
