@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import blog from "../public/assets/blog.jpg";
+import aritzia from "../public/assets/aritziaAppImg.png"
 import styles from "../styles/Projects.module.scss";
 
 export default function Projects() {
@@ -18,7 +19,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      image: blog,
+      image: aritzia,
       title: "Movie Details Website",
       description:
         "Web app that displays details of any movie. Built using Next.js and IMDb API.",

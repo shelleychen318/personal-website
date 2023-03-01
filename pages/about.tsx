@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import blog from "../public/assets/blog.jpg";
+import me from "../public/assets/aboutMeImg.png";
 import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.scss";
 
@@ -16,7 +16,7 @@ export default function About() {
 
       <div className={styles.container}>
         <h2>About</h2>
-        <Image src={blog} alt="me" className={styles.image} />
+        <Image src={me} alt="me" className={styles.image} />
         <br />
         <br />
         <div className={styles.text}>
