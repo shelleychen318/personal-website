@@ -4,21 +4,15 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  padding: 1rem 3rem 6rem;
-  // min-height: 100vh;
-  // min-height: -webkit-fill-available;
-  // width: 100%;
-
-  * {
-    width: min(100%, calc(1000px));
-  }
+  padding: 0 3rem 6rem 3rem;
 
   .projectCard {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem 0;
     border-radius: 1rem;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
 
     .imageContainer {
       max-width: 400px;
@@ -28,7 +22,7 @@
       aspect-ratio: 4 / 3;
 
       img {
-        border-radius: 1.5rem;
+        border-radius: 1rem;
         position: relative !important;
         object-fit: cover;
       }
@@ -37,10 +31,24 @@
     .info {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0 4rem;
-      max-width: 500px;
+      // align-items: center;
+      // justify-content: center;
+      padding: 0 3rem;
+      width: 400px;
+      max-width: 90%;
+      // text-align: justify;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .projects > a:nth-child(2n + 1) > .projectCard {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects > a > .projectCard > .info {
+    padding: 0 1rem;
   }
 }
