@@ -41,8 +41,7 @@ export default function About() {
           <br />
           <p>
             In my free time, I enjoy travelling, playing badminton, and trying
-            out new restaurants. I am also an avid Netflix watcher when I have
-            enough time to do that!
+            out new restaurants!
           </p>
           <br />
           <p>
