@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  padding: 0 3rem 8rem;
+  padding: 6rem 3rem 8rem;
   max-width: 900px;
 
   .image {
@@ -21,6 +21,6 @@
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 2rem 6rem;
+    padding: 6rem 2rem 6rem;
   }
 }

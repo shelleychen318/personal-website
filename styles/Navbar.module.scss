@@ -1,10 +1,14 @@
 .navbar {
   display: flex;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6rem;
   justify-content: space-between;
   width: 100%;
   z-index: 10;
   padding: 2rem 3rem;
+  background-color: var(--bg);
 
   .logo {
     text-decoration: none;
@@ -38,6 +42,10 @@
   }
 }
 
+.scrolledNav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
 @media (max-width: 500px) {
   .navbar {
     padding: 2rem 2rem;
@@ -46,8 +54,8 @@
         margin-left: 1.5rem;
 
         .linksText {
-        display: none;
-      }
+          display: none;
+        }
 
         .icons {
           display: block;

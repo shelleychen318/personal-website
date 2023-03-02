@@ -1,7 +1,27 @@
+import { useEffect, useState } from "react";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { BiHome, BiGridAlt, BiPaperPlane } from "react-icons/bi";
 import styles from "styles/Navbar.module.scss";
+
+const useScrollPosition = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+
+    window.addEventListener("scroll", updatePosition);
+
+    updatePosition();
+
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
+
+  return scrollPosition;
+};
 
 export default function Navbar() {
   const router = useRouter();
@@ -28,8 +48,10 @@ export default function Navbar() {
     },
   ];
 
+  const scrollPosition = useScrollPosition();
+
   return (
-    <header className={styles.navbar}>
+    <header className={`${styles.navbar} ${scrollPosition > 0 ? styles.scrolledNav : ""} `}>
       <Link href="/" className={styles.logo}>
         SHELLEYCHEN
       </Link>
