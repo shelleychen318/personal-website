@@ -23,7 +23,7 @@ export default function Home() {
             A developer who thrives in collaborative and creative spaces.
             Constantly growing.
           </h4>
-          <Link href="/projects" className={styles.link}>
+          <Link href="/projects" className={`${styles.link} ${styles.bounce}`} >
             <h4>View some of my work </h4>
             <BiRocket size={25} className={styles.icon} />
           </Link>

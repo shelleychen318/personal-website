@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 600px;
-  // margin-left: 8rem;
   padding: 0 2rem 0 8rem;
 
   .text {
@@ -17,10 +16,13 @@
     .link {
       display: flex;
       gap: 0.8rem;
-      width:fit-content;
+      width: fit-content;
       color: var(--accent);
       text-decoration: none;
       transition-property: transform;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
 
       h4,
       .icon {
@@ -31,6 +33,22 @@
         transition-duration: 0.5s;
         transform: scale(1.02);
         transition-timing-function: ease-in-out;
+      }
+    }
+
+    .bounce {
+      animation-name: bounce;
+      animation-timing-function: ease;
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+      100% {
+        transform: translateY(0);
       }
     }
   }
