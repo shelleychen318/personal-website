@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { BiHome, BiGridAlt, BiPaperPlane } from "react-icons/bi";
+import { BiHome, BiArchive, BiPaperPlane } from "react-icons/bi";
 import styles from "styles/Navbar.module.scss";
 
 const useScrollPosition = () => {
@@ -37,7 +36,7 @@ export default function Navbar() {
     {
       id: 2,
       link: "projects",
-      icon: <BiGridAlt size={25} />,
+      icon: <BiArchive size={25} />,
       href: "/projects",
     },
     {

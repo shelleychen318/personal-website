@@ -22,8 +22,7 @@ export default function Home() {
             <h1>Hi there! I'm Shelley.</h1>
             <h4>
               A developer who thrives in collaborative and innovative spaces.
-              Turning my ideas into reality, one digital experience at a
-              time.
+              Turning my ideas into reality, one digital experience at a time.
             </h4>
             <Link
               href="/projects"
