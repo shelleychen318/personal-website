@@ -69,8 +69,15 @@
 
 // decrease padding for smaller screens
 @media (max-width: 900px) {
-  .container > a > .projectCard > .info {
-    padding: 0 1rem;
+  .container > a > .projectCard {
+    padding: 1rem;
+    .imageContainer {
+      width: 90%;
+      height: 200px;
+    }
+    .info {
+      padding: 1rem;
+    }
   }
 }
 
@@ -87,7 +94,7 @@
       flex-direction: column;
       padding: 1rem;
       max-width: 350px;
-      width: 100%;
+      // width: 90%;
 
       .imageContainer {
         max-width: 100%;
