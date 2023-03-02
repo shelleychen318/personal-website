@@ -3,11 +3,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 6rem;
+  height: 5rem;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   z-index: 10;
-  padding: 2rem 3rem;
+  padding: 2rem;
   background-color: var(--bg);
 
   .logo {
@@ -35,6 +36,7 @@
         display: none;
       }
     }
+
     .activeLink {
       color: var(--accent);
       scale: 1.1;
@@ -56,7 +58,7 @@
         .linksText {
           display: none;
         }
-
+        
         .icons {
           display: block;
         }

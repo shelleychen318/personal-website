@@ -5,7 +5,7 @@
   margin: auto;
   max-width: 1000px;
   gap: 1rem;
-  padding: 6rem 3rem 6rem 3rem;
+  padding: 6rem 3rem;
 
   a {
     text-decoration: none;
@@ -60,14 +60,12 @@
   }
 }
 
-// alternate image and info positions each row
 @media (min-width: 640px) {
   .container > a:nth-child(2n + 1) > .projectCard {
     flex-direction: row-reverse;
   }
 }
 
-// decrease padding for smaller screens
 @media (max-width: 900px) {
   .container > a > .projectCard {
     padding: 1rem;
@@ -87,14 +85,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 9rem 2rem;
     gap: 2rem;
 
     a > .projectCard {
       flex-direction: column;
       padding: 1rem;
       max-width: 350px;
-      // width: 90%;
 
       .imageContainer {
         max-width: 100%;
