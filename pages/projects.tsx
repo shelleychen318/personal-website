@@ -5,7 +5,7 @@ import Link from "next/link";
 import aritzia from "../public/assets/aritziaApp.png";
 import movie from "../public/assets/movieDetailsApp.png";
 import blog from "../public/assets/blog.jpg";
-import expense from "../public/assets/expenseTrackerApp.png"
+import expense from "../public/assets/expenseTrackerApp.png";
 import styles from "../styles/Projects.module.scss";
 
 export default function Projects() {
@@ -62,9 +62,7 @@ export default function Projects() {
                 <Image src={image} alt={title} className={styles.image} />
               </div>
               <div className={styles.info}>
-                <div className={styles.title}>
-                  <h3>{title}</h3>
-                </div>
+                <h3>{title}</h3>
                 <p>{description}</p>
               </div>
             </div>

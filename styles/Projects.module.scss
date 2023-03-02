@@ -51,8 +51,9 @@
         width: 400px;
         max-width: 90%;
 
-        .title {
+        h3 {
           text-align: center;
+          margin: 0 0 10px 0;
         }
       }
     }
@@ -97,10 +98,6 @@
       .info {
         max-width: 100%;
         height: auto;
-
-        .text {
-          max-width: 100%;
-        }
       }
     }
   }

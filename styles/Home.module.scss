@@ -18,10 +18,10 @@
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+      gap: 2.5rem;
 
       .link {
-        display: flex;
-        gap: 0.8rem;
+        display: block;
         width: fit-content;
         color: var(--accent);
         text-decoration: none;
@@ -30,9 +30,14 @@
         animation-iteration-count: infinite;
         transform-origin: bottom;
 
+        h4 {
+          padding-right: 1rem;
+        }
+
         h4,
         .icon {
           font-weight: 500;
+          display: inline-block;
         }
 
         &:hover {
