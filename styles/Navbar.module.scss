@@ -5,16 +5,11 @@
   width: 100%;
   z-index: 10;
   padding: 2rem 3rem;
-  // top: 0;
-  // left: 0;
-  // background-color: black;
-  // align-items: center;
-  // text-align: center;
-  // margin-left: auto;
-  // margin-right: auto;
 
   .logo {
     text-decoration: none;
+    font-weight: 500;
+    font-size: large;
   }
 
   .links {
@@ -45,23 +40,18 @@
 
 @media (max-width: 500px) {
   .navbar {
+    padding: 2rem 2rem;
     .links {
       a {
-        margin-left: 2.5rem;
+        margin-left: 1.5rem;
+
+        .linksText {
+        display: none;
+      }
 
         .icons {
           display: block;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .navbar {
-    .links > a {
-      .linksText {
-        display: none;
       }
     }
   }
