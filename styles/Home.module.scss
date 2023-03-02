@@ -1,68 +1,79 @@
-.container2 {
+.container {
   display: flex;
-  flex-direction: column;
-  height: 600px;
+  flex-direction: row;
+  align-items: center;
+
   padding: 0 2rem 0 8rem;
 
-  .text {
-    max-width: 800px;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  .textContainer {
+    height: 600px;
 
-    .link {
+    .text {
       display: flex;
-      gap: 0.8rem;
-      width: fit-content;
-      color: var(--accent);
-      text-decoration: none;
-      transition-property: transform;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      transform-origin: bottom;
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 
-      h4,
-      .icon {
-        font-weight: 500;
+      .link {
+        display: flex;
+        gap: 0.8rem;
+        width: fit-content;
+        color: var(--accent);
+        text-decoration: none;
+        transition-property: transform;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+
+        h4,
+        .icon {
+          font-weight: 500;
+        }
+
+        &:hover {
+          transition-duration: 0.5s;
+          transform: scale(1.02);
+          transition-timing-function: ease-in-out;
+        }
       }
 
-      &:hover {
-        transition-duration: 0.5s;
-        transform: scale(1.02);
-        transition-timing-function: ease-in-out;
+      .bounce {
+        animation-name: bounce;
+        animation-timing-function: ease;
       }
-    }
-
-    .bounce {
-      animation-name: bounce;
-      animation-timing-function: ease;
-    }
-    @keyframes bounce {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-      100% {
-        transform: translateY(0);
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+        100% {
+          transform: translateY(0);
+        }
       }
     }
   }
 }
 
 @media (max-width: 768px) {
-  .container2 {
+  .container {
     height: 520px;
     padding: 0 2rem 0 4rem;
+
+    .imageContainer {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 640px) {
-  .container2 {
+  .container {
     padding: 0 3rem;
   }
 }
