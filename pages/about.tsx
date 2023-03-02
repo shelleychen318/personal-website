@@ -23,7 +23,7 @@ export default function About() {
         <div className={styles.text}>
           <p>
             Hi, I'm Shelley! I am a first year Systems Design Engineering
-            student at the Unviersity of Waterloo. I am passionate about
+            student at the Unviersity of Waterloo. I'm passionate about
             technology and design, and am looking to gain more experience in
             full stack development.
           </p>
@@ -32,7 +32,7 @@ export default function About() {
             What excites me about development is getting to turn my wildest
             ideas into reality through the power of writing code. I enjoy
             learning new technologies and developing creative solutions that
-            address interesting problems. You can check out some of my work on{" "}
+            address interesting problems. The nitty gritty details of my work are available on{" "}
             <Link href="https://github.com/shelleychen318" target="_blank">
               Github
             </Link>
