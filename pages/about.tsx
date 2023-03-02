@@ -31,8 +31,9 @@ export default function About() {
           <p>
             What excites me about development is getting to turn my wildest
             ideas into reality through the power of writing code. I enjoy
-            learning new technologies and applying them to solve problems that
-            I'm passionate about. You can check out some of my work on{" "}
+            learning new technologies and applying them to develop creative
+            solutions that address interesting problems. You can check out some
+            of my work on{" "}
             <Link href="https://github.com/shelleychen318" target="_blank">
               Github
             </Link>
