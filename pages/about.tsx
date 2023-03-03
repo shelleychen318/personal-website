@@ -41,7 +41,11 @@ export default function About() {
           <br />
           <p>
             In my free time, I enjoy travelling, playing badminton, and trying
-            out new restaurants!
+            out new restaurants! Feel free to reach out to me on{" "}
+            <Link href="https://linkedin.com/in/shelleychenn" target="_blank">
+              LinkedIn
+            </Link>
+            .
           </p>
           <br />
           <p>
