@@ -50,9 +50,9 @@ export default function Navbar() {
   const scrollPosition = useScrollPosition();
 
   return (
-    <header className={`${styles.navbar} ${scrollPosition > 0 ? styles.scrolledNav : ""} `}>
+    <header className={`${styles.navbar} ${scrollPosition > 0 ? styles.scrolledNav : ""}`}>
       <Link href="/" className={styles.logo}>
-        SHELLEYCHEN
+        SHELLEY CHEN
       </Link>
       <nav className={styles.links}>
         {links.map(({ id, link, icon, href }) => (
