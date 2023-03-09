@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 6rem;
+  padding: 6rem 2rem 0 4rem;
 
   .textContainer {
     height: 600px;
@@ -66,10 +66,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .container {
     height: 520px;
-    padding: 6rem 2rem 0 4rem;
 
     .imageContainer {
       display: none;

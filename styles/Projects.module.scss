@@ -66,19 +66,6 @@
   }
 }
 
-@media (max-width: 900px) {
-  .container > a > .projectCard {
-    padding: 1rem;
-    .imageContainer {
-      width: 90%;
-      height: 200px;
-    }
-    .info {
-      padding: 1rem;
-    }
-  }
-}
-
 // change to column view for small screens
 @media (max-width: 640px) {
   .container {
