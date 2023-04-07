@@ -39,13 +39,13 @@
       .info {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 0 2rem;
         width: 400px;
         max-width: 90%;
 
         h3 {
           width: fit-content;
-          text-align: center;
           padding-bottom: 2px;
           background-image: linear-gradient(#000 0 0);
           background-position: 0 100%;
