@@ -16,6 +16,11 @@
   a {
     font-size: large;
     font-weight: 600;
+
+    &:hover {
+      color: var(--accent);
+      transition-duration: 0.3s;
+    }
   }
 }
 
