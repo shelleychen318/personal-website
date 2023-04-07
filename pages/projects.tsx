@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import coursify from "../public/assets/coursify.png";
 import aritzia from "../public/assets/aritziaApp.png";
 import movie from "../public/assets/movieDetailsApp.png";
 import blog from "../public/assets/blog.jpg";
@@ -12,6 +13,14 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      image: coursify,
+      title: "Coursify",
+      description:
+        "A full-stack web app that keeps track of the courses you've completed in university so far. Built using the MERN stack.",
+      link: "https://github.com/shelleychen318/coursify",
+    },
+    {
+      id: 2,
       image: aritzia,
       title: "Aritzia App",
       description:
@@ -19,7 +28,7 @@ export default function Projects() {
       link: "https://github.com/shelleychen318/aritzia-app",
     },
     {
-      id: 2,
+      id: 3,
       image: movie,
       title: "Movie Details App",
       description:
@@ -27,7 +36,7 @@ export default function Projects() {
       link: "https://movie-details-app.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       image: blog,
       title: "Blog Website",
       description:
@@ -35,7 +44,7 @@ export default function Projects() {
       link: "https://javascript-blog.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       image: expense,
       title: "Expense Tracker App",
       description:
