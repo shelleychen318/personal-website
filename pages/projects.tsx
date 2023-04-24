@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import coursify from "../public/assets/coursify.png";
 import aritzia from "../public/assets/aritziaApp.png";
 import movie from "../public/assets/movieDetailsApp.png";
@@ -78,6 +79,8 @@ export default function Projects() {
           </Link>
         ))}
       </div>
+
+      <Footer />
     </>
   );
 }

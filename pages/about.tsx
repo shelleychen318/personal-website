@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import me from "../public/assets/aboutMeImg.png";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import styles from "../styles/About.module.scss";
 
 export default function About() {
@@ -53,6 +54,8 @@ export default function About() {
           </p>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
