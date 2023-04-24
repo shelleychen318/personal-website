@@ -75,7 +75,7 @@
 }
 
 // change to column view for small screens
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;

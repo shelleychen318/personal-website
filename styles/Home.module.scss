@@ -66,18 +66,19 @@
   }
 }
 
-@media (max-width: 900px) {
-  .container {
-    height: 520px;
-
-    .imageContainer {
-      display: none;
-    }
+@media (max-width: 768px) {
+  .container > .imageContainer {
+    display: none;
   }
 }
 
 @media (max-width: 640px) {
   .container {
+    height: 520px;
     padding: 16rem 2rem 0 2rem;
+    
+    .imageContainer {
+      display: none;
+    }
   }
 }
