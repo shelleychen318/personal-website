@@ -19,7 +19,9 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <div className={styles.text}>
-            <h1>Hi there! I'm Shelley.</h1>
+            <h1>
+              <span className={styles.hello}>hello world, </span>I'm Shelley.
+            </h1>
             <h4>
               A developer who thrives in collaborative and innovative spaces.
               Turning my ideas into reality, one digital experience at a time.

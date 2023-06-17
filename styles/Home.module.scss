@@ -20,6 +20,10 @@
       transform: translateY(-50%);
       gap: 2.5rem;
 
+      h1>.hello {
+        color: #6B7F5D;
+      }
+
       .link {
         display: block;
         width: fit-content;
