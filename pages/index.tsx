@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { BiRocket } from "react-icons/bi";
-import Navbar from "../components/Navbar";
-import duck from "../public/assets/duck.png";
+import me from "../public/assets/pic.png";
+import Footer from "../components/Footer";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -14,29 +13,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-
       <div className={styles.container}>
-        <div className={styles.textContainer}>
-          <div className={styles.text}>
-            <h1>
-              <span className={styles.hello}>hello world, </span>I'm Shelley.
-            </h1>
-            <h4>
-              A developer who thrives in collaborative and innovative spaces.
-              Turning my ideas into reality, one digital experience at a time.
-            </h4>
-            <Link
-              href="/projects"
-              className={`${styles.link} ${styles.bounce}`}
-            >
-              <h4>View some of my work </h4>
-              <BiRocket size={25} className={styles.icon} />
-            </Link>
-          </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <Image src={duck} alt="duck" width="350" height="350" />
+        <h1>Shelley Chen 🦆</h1>
+        <Image src={me} alt="me" className={styles.image} />
+        <div className={styles.text}>
+          <p>
+            Hello world! My name is Shelley and I'm a 2nd year Systems Design
+            Engineering student at the Unviersity of Waterloo. Previously, I
+            worked at{" "}
+            <Link href="https://miovision.com/" target="_blank">
+              Miovision
+            </Link>{" "}
+            as a Software Developer.
+          </p>
+          <br />
+          <p>
+            What excites me about software development is being able to merge my
+            creativity with problem-solving skills to create innovative
+            solutions that address real problems. I enjoy learning new
+            technologies and crafting engaging products with intuitive UI.
+          </p>
+          <br />
+          <p>
+            In my free time, I enjoy travelling, going on hikes, and trying out
+            new restaurants!
+          </p>
+          <br />
+          <br />
+          <br />
+
+          <Footer />
         </div>
       </div>
     </>
