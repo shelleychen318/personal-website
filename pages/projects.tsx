@@ -32,7 +32,7 @@ const PROJECTS = [
 export default function Projects() {
   return (
     <div className={styles.container}>
-      <p className={styles.header}>from code to concept - my projects</p>
+      <p className={styles.header}>from concept to code - my projects</p>
       <div className={styles.projectsList}>
         {PROJECTS.map((project) => (
           <ProjectCard key={project.id} project={project} />
