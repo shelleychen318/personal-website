@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "styles/ProjectCard.module.scss";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
@@ -19,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <img src={project.pic} alt={project.name} />
+        <Image src={project.pic} alt={project.name} />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.projectName}>

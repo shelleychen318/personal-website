@@ -26,7 +26,7 @@ export default function Navbar() {
           </>
         ) : (
           <li>
-            <Link href="/">// return home</Link>
+            <Link href="/">{"// "}return home</Link>
           </li>
         )}
       </ul>
