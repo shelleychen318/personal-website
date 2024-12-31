@@ -1,0 +1,14 @@
+.container {
+  margin: 0 1rem 2rem;
+
+  .header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .projectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

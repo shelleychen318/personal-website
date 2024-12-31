@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 2rem 2rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  &.centered {
+    justify-content: center;
+  }
+
+  .links {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .links li {
+    font-size: 14px;
+  }
+
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .links a:hover {
+    color: var(--accent);
+    transition-duration: 0.3s;
+  }
+}

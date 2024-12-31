@@ -1,13 +1,14 @@
-import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
+import Navbar from "../components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={poppins.className}>
-      <Component {...pageProps} />
-    </main>
+    <div className="container">
+      <Navbar />
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </div>
   );
 }

@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 75%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 600;
+      font-style: italic;
+
+      @media (max-width: 768px) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      padding-top: 1.5rem;
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+
+  .image {
+    max-width: 20%;
+    @media (max-width: 768px) {
+      max-width: 40%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

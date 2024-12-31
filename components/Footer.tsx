@@ -1,19 +1,20 @@
 import styles from "styles/Footer.module.scss";
 import Link from "next/link";
-import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiMail } from "react-icons/fi";
+import { AiFillGithub } from "react-icons/ai";
 
 const LINKS = [
   {
     id: 1,
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/shelleychenn/",
-    icon: <FiLinkedin size={25} />,
+    name: "Github",
+    link: "https://github.com/shelleychen318",
+    icon: <AiFillGithub size={25} />,
   },
   {
     id: 2,
-    name: "Github",
-    link: "https://github.com/shelleychen318",
-    icon: <FiGithub size={25} />,
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/shelleychenn/",
+    icon: <FiLinkedin size={25} />,
   },
   {
     id: 3,
@@ -27,7 +28,6 @@ export default function Footer() {
   return (
     <footer className={styles.container}>
       <div className={styles.content}>
-        <p>Let's get in touch :)</p>
         <div className={styles.links}>
           {LINKS.map(({ id, link, icon }) => (
             <Link key={id} href={link} target="_blank">
